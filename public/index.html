@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box" id="login-box">
+            <h2>Login</h2>
+            <form id="login-form" action="login.php" method="post">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="button" onclick="submitForm()">Login</button>
+                <p class="switch-form" onclick="switchForm('register')">New User? Register here</p>
+            </form>
+        </div>
+
+        <div class="login-box" id="register-box" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" name="register-username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-phone">Phone Number:</label>
+                    <input type="text" id="register-phone" name="register-phone" required>
+                </div>
+
+                <button type="button" onclick="submitRegisterForm()">Register</button>
+                <p class="switch-form" onclick="switchForm('login')">Already have an account? Login here</p>
+            </form>
+        </div>
+
+        <div class="login-box" id="welcome-box" style="display: none;">
+            <h2>Welcome, New User!</h2>
+            <p>Your registration was successful. You can now log in using your credentials.</p>
+            <button type="button" onclick="switchForm('login')">Login</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

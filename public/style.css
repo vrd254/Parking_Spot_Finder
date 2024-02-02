@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://www.hdwallpapers.in/download/bugatti_chiron_4k_5k_hd_cars-HD.jpg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for larger screens */
+    text-align: center;
+    margin: 20px;
+}
+
+.switch-form {
+    color: #3498db;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: color 0.3s;
+}
+
+.switch-form:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+    .login-box {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+}
