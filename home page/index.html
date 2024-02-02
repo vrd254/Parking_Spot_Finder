@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Spot Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-image: url('https://stock.adobe.com/search?k=plain+white+background&asset_id=240981152');">
+    <header>
+        <div class="header-container">
+            <h1>Parking Spot Finder</h1>
+            <p>Find the perfect parking spot with ease!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="search-section">
+                <h2>Search for Parking</h2>
+                <input type="text" id="location-input" placeholder="Enter location">
+                <button onclick="searchParking()">Search</button>
+            </section>
+
+            <section id="map-section">
+                <!-- Display the map here using your preferred mapping library (e.g., Google Maps, Mapbox) -->
+                <div id="map"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Parking Spot Finder</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
